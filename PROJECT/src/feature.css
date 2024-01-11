@@ -1,0 +1,34 @@
+.offer{
+    position: relative;
+    
+}
+.offer::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    
+}
+.offer:hover::after{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.offer .btn{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%,-50%);
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    z-index: 3;
+}
+.offer:hover .btn{
+    top: 50%;
+    opacity: 1;
+}
